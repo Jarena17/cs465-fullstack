@@ -13,7 +13,6 @@ const connect = () => {
                 useNewUrlParser: true,
                 useCreateIndex: true,
             }),
-        1000
     );
 };
 
@@ -70,4 +69,5 @@ process.on("SIGTERM", () => {
 connect();
 
 // bring in schema
-require('./models/travlr');
+require('../models/travlr');
+require('../models/user');
